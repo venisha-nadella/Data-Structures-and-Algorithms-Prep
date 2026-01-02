@@ -1,0 +1,143 @@
+# 📘 Time & Space Complexity — DSA Notes (Java)
+
+> **Purpose:** Quick, interview‑ready reference for analyzing algorithm efficiency.
+
+---
+
+## 1. What is Time Complexity?
+
+Time complexity describes how an algorithm’s **execution time grows with input size (n)**.
+
+* Measures **growth rate**, not actual seconds
+* Platform & machine independent
+
+---
+
+## 2. Why It Matters
+
+* Choose the **right approach** for large inputs
+* Compare **multiple solutions**
+* Essential for **interviews & optimization**
+
+---
+
+## 3. Types of Time Complexity
+
+* **Best Case:** Minimum time (rarely discussed)
+* **Average Case:** Expected time (hard to compute)
+* **Worst Case ⭐:** Maximum time (**used in interviews**)
+
+---
+
+## 4. Big‑O Notation
+
+Represents the **upper bound (worst case)** growth.
+
+### Rules
+
+* Ignore constants → `O(2n) = O(n)`
+* Ignore lower terms → `O(n² + n) = O(n²)`
+* Focus on the **dominant term**
+
+---
+
+## 5. Common Complexities (MEMORIZE)
+
+```
+O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2ⁿ) < O(n!)
+```
+
+| Complexity | Meaning      | Example       |
+| ---------- | ------------ | ------------- |
+| O(1)       | Constant     | Array access  |
+| O(log n)   | Logarithmic  | Binary search |
+| O(n)       | Linear       | Single loop   |
+| O(n log n) | Linearithmic | Merge sort    |
+| O(n²)      | Quadratic    | Nested loops  |
+| O(2ⁿ)      | Exponential  | Subsets       |
+| O(n!)      | Factorial    | Permutations  |
+
+---
+
+## 6. How to Calculate Time Complexity
+
+### Single Loop
+
+```java
+for (int i = 0; i < n; i++) {}
+```
+
+→ **O(n)**
+
+### Nested Loops
+
+```java
+for (int i = 0; i < n; i++)
+  for (int j = 0; j < n; j++) {}
+```
+
+→ **O(n²)**
+
+### Logarithmic Loop
+
+```java
+for (int i = 1; i <= n; i *= 2) {}
+```
+
+→ **O(log n)**
+
+### Sequential Loops
+
+```java
+for (int i = 0; i < n; i++) {}
+for (int i = 0; i < n; i++) {}
+```
+
+→ **O(n)**
+
+---
+
+## 7. Conditionals
+
+```java
+if (cond) { // O(n)
+} else { // O(1)
+}
+```
+
+→ Worst case = **O(n)**
+
+---
+
+## 8. Recursion Complexity
+
+| Pattern   | Time     | Space        |
+| --------- | -------- | ------------ |
+| `f(n-1)`  | O(n)     | O(n) (stack) |
+| `f(n/2)`  | O(log n) | O(log n)     |
+| Two calls | O(2ⁿ)    | O(n)         |
+
+---
+
+## 9. Space Complexity
+
+Space includes:
+
+* Extra variables
+* Data structures (arrays, maps)
+* **Recursion stack**
+
+---
+
+## 10. Constraints → Approach Mapping (INTERVIEW GOLD)
+
+| n          | Preferred Complexity |
+| ---------- | -------------------- |
+| ≤ 10³      | O(n²)                |
+| ≤ 10⁵      | O(n log n)           |
+| ≤ 10⁶      | O(n)                 |
+| Very large | O(log n)             |
+
+---
+I will try to write time and space complexity for every problem i practice.
+
