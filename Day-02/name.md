@@ -8,12 +8,6 @@ An **array** is a collection of elements of the **same data type** stored in **c
 - In Java, indexing starts from **0**
 - Size of an array is **fixed**
 
-### Example (Java)
-```java
-int[] arr = {10, 20, 30, 40};
-
----
-
 ## 🔹 Key Characteristics of an Array
 - Fixed size
 - Stores elements of the same data type
@@ -26,12 +20,6 @@ int[] arr = {10, 20, 30, 40};
 ## 🔹 How is an Array Stored in Memory?
 
 Arrays are stored in **contiguous memory locations**, meaning all elements are placed next to each other in memory.
-
-### Example
-```java
-int[] arr = {5, 10, 15};
-
----
 
 ## 🧠 Memory Representation of an Array
 
@@ -65,14 +53,6 @@ Each index directly maps to a memory location.
 - `size_of_data_type` → memory size of one element (e.g., 4 bytes for `int`)
 
 👉 Because of this direct calculation, **array access takes constant time**.
-
----
-
-## 🔹 Example (Java)
-
-```java
-int[] arr = {10, 20, 30, 40};
-int x = arr[2];   // Direct access
 
 ---
 # 🧩 Problems Practiced
