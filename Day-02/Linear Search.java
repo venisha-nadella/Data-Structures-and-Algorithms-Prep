@@ -7,14 +7,10 @@ class Main {
             a[i]=sc.nextInt();
         }
         int key=sc.nextInt();
-        boolean found=false;
-        for(int var:a){
-            if(var==key){
-                found=true;
-                break;
+        for(int i=0;i<5;i++){
+            if(a[i]==key){
+                System.out.println("Key found at index "+i);
             }
         }
-        if(found) System.out.println("Key found");
-        else System.out.println("Key not found");
     }
 }
