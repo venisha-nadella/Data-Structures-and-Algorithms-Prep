@@ -75,5 +75,19 @@ int[] arr = {10, 20, 30, 40};
 int x = arr[2];   // Direct access
 
 ---
-# Problems Practiced
+# 🧩 Problems Practiced
 
+1. Print all elements of an array  
+2. Find sum of elements  
+3. Find maximum element  
+4. Find minimum element  
+5. Count even numbers  
+6. Count odd numbers  
+7. Count positive, negative, and zero elements  
+8. Find average of elements  
+9. Copy one array into another  
+10. Linear search (find element index)  
+11. Check if an element exists  
+12. Count occurrences of an element  
+13. Find first occurrence of an element  
+14. Find last occurrence of an element  
